@@ -5,7 +5,7 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/html'});
-	response.write(fs.readFileSync("./index1.html", "utf8").toString());
+	response.write(fs.readFileSync("./index.html", "utf8").toString());
 	response.end();
 });
 
